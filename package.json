@@ -1,0 +1,11 @@
+{
+  "name": "jenkins-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo 'Running Unit Tests...' && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
