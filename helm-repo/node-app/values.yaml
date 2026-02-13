@@ -1,5 +1,5 @@
 replicaCount: 2
 
 image:
-  repository: chandraMohanupadhyay/node-ci-cd-app
+  repository: chandramohanupadhyay/node-ci-cd-app
   tag: latest
