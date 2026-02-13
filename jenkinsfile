@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/<your-username>/node-ci-cd-app.git'
+                git 'https://github.com/chandraMohanupadhyay/node-ci-cd-app.git'
             }
         }
 
@@ -45,16 +45,6 @@ pipeline {
                     docker push $IMAGE_NAME
                     '''
                 }
-            }
-        }
-
-        stage('Deploy Application') {
-            steps {
-                sh '''
-                docker stop node-app || true
-                docker rm node-app || true
-                docker run -d -p 3000:3000 --name node-app $IMAGE_NAME
-                '''
             }
         }
     }
